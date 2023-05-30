@@ -41,9 +41,7 @@ hr{
     height: auto;
     background-color: blue;
 }
-.navbar img{
-    width: 10%;
-}
+
 .navbar a{
     text-decoration: none;
     color: white;
@@ -161,6 +159,7 @@ span{
         justify-content: center;
         
     }
+    
     .container{
         width: 100%;
     }
