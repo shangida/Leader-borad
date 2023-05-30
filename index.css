@@ -1,0 +1,253 @@
+/* font imprrot */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+/* common style */
+body{
+    background: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+    
+    
+    
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
+/* header area style */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: blue;
+}
+.navbar img{
+    width: 10%;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+
+}
+/* top players style */
+.top-title{
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+    padding-bottom: 10px;
+}
+.top-players{
+    margin-bottom: 30px;
+
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+    color: #000000;
+}
+/* top blogs area */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 16px;
+}
+.blog{
+    display: flex;
+    
+}
+.blog-img img{
+    width: 100%;
+    height: 110px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.author-name{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+/* Lates course style */
+.courses{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    
+}
+.course-info{
+    display: flex ;
+    align-items: center;
+}
+.course-author{
+    color: #ED6B4F;
+}
+.courese-img img{
+    Width:224px;
+    Height:104px;
+}
+
+
+.filled-color{
+    color:#FFC014; ;
+    font-size: 10px;
+}
+.empty{
+    color: #A2A2A2;
+    font-size: 10px;
+}
+span{
+    padding: 0 5px;
+}
+.course-duration{
+    background-color: #f4aeb6;
+    font-size: 14px;
+    color: #FF4A60;
+    border-radius: 30px;
+    margin: 10px;
+    padding:0 5px;
+}
+
+/* media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container{
+        width: 100%;
+    }
+
+    .players, .blogs, .courses  {
+       grid-template-columns: repeat(1, 1fr); 
+       
+    }
+
+    .player, .blog, .courses {
+        flex-direction: column;
+    }
+    .blog-img img{
+        width: 60%;
+    }
+    
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .navbar{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container{
+        width: 100%;
+    }
+
+    .players, .blogs, .courses  {
+       grid-template-columns: repeat(2, 1fr); 
+       
+    }
+
+    .player, .blog, .courses {
+        flex-direction: column;
+    }
+    .blog-img img{
+        width: 60%;
+    }
+    
+    
+    
+    
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .navbar{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .blogs{
+       grid-template-columns: repeat(2, 1fr); 
+       
+    }
+
+    .player, .blog, .courses {
+        flex-direction: column;
+    }
+    .blog-img img{
+        width: 60%;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .blog-img img{
+        width: 50%;
+    }
+}
+
